@@ -15,8 +15,8 @@ function Layout({ title, children }: any) {
       <div className="flex flex-col min-h-screen justify-between">
         {/* HEADER */}
         <header>
-          <nav className="flex items-center justify-between h-16 px-4 bg-slate-300 shadow-md">
-            <Link className="font-bold text-2xl" href="\">
+          <nav className="flex items-center justify-between h-16 px-4 bg-gray-300">
+            <Link className="font-bold text-2xl" href="/">
               e-shop
             </Link>
             <div>
@@ -38,7 +38,7 @@ function Layout({ title, children }: any) {
         <main className="container m-auto mt-4 px-4">{children}</main>
 
         {/* FOOTER */}
-        <footer className="flex justify-center items-center h-16 bg-slate-300 shadow-md shadow-gray shadow-inner">
+        <footer className="flex justify-center items-center h-16 shadow shadow-black shadow-inner">
           Copyright &copy; 2022 Online Shop
         </footer>
       </div>
