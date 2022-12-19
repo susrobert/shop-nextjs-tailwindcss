@@ -16,15 +16,19 @@ function Layout({ title, children }: any) {
         {/* HEADER */}
         <header>
           <nav className="flex items-center justify-between h-16 px-4 bg-slate-300 shadow-md">
-            <Link className="font-bold text-xl" href="\">
+            <Link className="font-bold text-2xl" href="\">
               e-shop
             </Link>
             <div>
-              <Link className="p-2" href="/cart">
-                <ShoppingBagIcon className="inline h-6 w-6" />
+              <Link className="p-4 relative" href="/cart">
+                <ShoppingBagIcon className="inline h-8 w-8 hover:text-gray-500" />
+                <span className="absolute font-bold -ml-3 -mt-2 text-center leading-5 text-xs w-5 h-5 rounded-full bg-red-400">
+                  {0}
+                </span>
               </Link>
+
               <Link href="/login">
-                <UserCircleIcon className="inline h-6 w-6" />
+                <UserCircleIcon className="inline h-8 w-8 hover:text-gray-500" />
               </Link>
             </div>
           </nav>
