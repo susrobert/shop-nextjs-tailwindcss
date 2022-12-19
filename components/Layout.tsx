@@ -1,14 +1,14 @@
-import Head from "next/head";
-import Link from "next/link";
-import React from "react";
+import Head from 'next/head';
+import Link from 'next/link';
+import React from 'react';
 
-import { ShoppingBagIcon, UserCircleIcon } from "@heroicons/react/24/outline";
+import { ShoppingBagIcon, UserCircleIcon } from '@heroicons/react/24/outline';
 
 function Layout({ title, children }: any) {
   return (
     <div>
       <Head>
-        <title>{title ? title + " - Amazon" : "Amazon"}</title>
+        <title>{title ? title + ' - Amazon' : 'Amazon'}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -38,7 +38,7 @@ function Layout({ title, children }: any) {
         <main className="container m-auto mt-4 px-4">{children}</main>
 
         {/* FOOTER */}
-        <footer className="flex justify-center items-center h-16 shadow shadow-black shadow-inner">
+        <footer className="flex justify-center items-center h-16 shadow shadow-inner">
           Copyright &copy; 2022 Online Shop
         </footer>
       </div>
