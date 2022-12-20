@@ -22,7 +22,7 @@ function Layout({ title, children }: any) {
             <div>
               <Link className="p-4 relative" href="/cart">
                 <ShoppingBagIcon className="inline h-8 w-8 hover:text-gray-500" />
-                <span className="absolute font-bold -ml-3 -mt-2 text-center leading-5 text-xs w-5 h-5 rounded-full bg-red-400">
+                <span className="absolute font-bold -ml-3 mt-2 text-center leading-5 text-xs w-5 h-5 rounded-full bg-red-400">
                   {0}
                 </span>
               </Link>
@@ -35,7 +35,7 @@ function Layout({ title, children }: any) {
         </header>
 
         {/* DYNAMIC COMPONENT */}
-        <main className="container m-auto mt-4 px-4">{children}</main>
+        <main className="container m-auto mt-10 px-4">{children}</main>
 
         {/* FOOTER */}
         <footer className="flex justify-center items-center h-16 shadow shadow-inner">
