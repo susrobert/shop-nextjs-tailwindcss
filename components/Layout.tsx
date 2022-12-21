@@ -1,14 +1,14 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import React from 'react';
+import Head from "next/head";
+import Link from "next/link";
+import React from "react";
 
-import { ShoppingBagIcon, UserCircleIcon } from '@heroicons/react/24/outline';
+import { ShoppingBagIcon, UserCircleIcon } from "@heroicons/react/24/outline";
 
 function Layout({ title, children }: any) {
   return (
     <div>
       <Head>
-        <title>{title ? title + ' - Amazon' : 'Amazon'}</title>
+        <title>{title ? title + " - E-Shop" : "E-Shop"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -19,10 +19,10 @@ function Layout({ title, children }: any) {
             <Link className="font-bold text-2xl" href="/">
               e-shop
             </Link>
-            <div>
-              <Link className="p-4 relative" href="/cart">
+            <div className="relative">
+              <Link className="p-4" href="/cart">
                 <ShoppingBagIcon className="inline h-8 w-8 hover:text-gray-500" />
-                <span className="absolute font-bold -ml-3 mt-2 text-center leading-5 text-xs w-5 h-5 rounded-full bg-red-400">
+                <span className="absolute font-bold -ml-3 text-center leading-5 text-xs w-5 h-5 rounded-full bg-red-400">
                   {0}
                 </span>
               </Link>
